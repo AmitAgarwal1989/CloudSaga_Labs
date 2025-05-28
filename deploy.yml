@@ -31,12 +31,12 @@ phases:
       - echo Validating Terraform code...
       - terraform validate
       - echo Planning Terraform deployment...
-      - terraform plan -input=false -out=tfplan
+      - terraform plan #-input=false -out=tfplan
 
   post_build:
     commands:
       - echo Applying Terraform plan...
-      - terraform apply -auto-approve tfplan
+      - terraform apply -auto-approve #tfplan
 
 artifacts:
   files:
