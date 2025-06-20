@@ -1,3 +1,3 @@
-resource "aws_s3_bucket" "tf_state" {
-  bucket = "my-terraform-tfstate-cloudsaga"
+resource "aws_vpc" "myvpc" {
+  cidr_block = "10.0.0.0/24"
 }
